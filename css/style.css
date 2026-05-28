@@ -1,11 +1,5 @@
-/* --------------------------------------------
-   FONTS
--------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
-/* --------------------------------------------
-   ROOT (новые имена переменных)
--------------------------------------------- */
 :root {
   --main-text: #2e2e2e;
   --gray-text: #7a7a7a;
@@ -18,9 +12,6 @@
   --card-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-/* --------------------------------------------
-   RESET & BASE
--------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -54,9 +45,6 @@ button {
   font-family: inherit;
 }
 
-/* --------------------------------------------
-   Утилиты
--------------------------------------------- */
 .wrap {
   width: min(calc(100% - 70px), 1220px);
   margin-left: auto;
@@ -74,9 +62,6 @@ button {
   border: 0;
 }
 
-/* --------------------------------------------
-   КНОПКИ
--------------------------------------------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -101,9 +86,6 @@ button {
 .btn--pick { min-width: 210px; }
 .btn--load { min-width: 140px; }
 
-/* --------------------------------------------
-   ШАПКА
--------------------------------------------- */
 .site-header {
   position: sticky;
   top: 0;
@@ -159,9 +141,6 @@ button {
 .burger-btn--open .burger-btn__line:nth-child(2) { opacity: 0;}
 .burger-btn--open .burger-btn__line:nth-child(3) { transform: rotate(-45deg) translateY(-7px);}
 
-/* --------------------------------------------
-   ХЛЕБНЫЕ КРОШКИ
--------------------------------------------- */
 .breadcrumb-trail { margin: 18px 0 32px 0;}
 .breadcrumb-trail__list {
   display: flex;
@@ -177,9 +156,7 @@ button {
 .breadcrumb-trail__current { color: var(--main-text);}
 .breadcrumb-trail a:hover { color: var(--teal-dark);}
 
-/* --------------------------------------------
-   ЗАГОЛОВКИ
--------------------------------------------- */
+
 .page-heading {
   font-size: 46px;
   font-weight: 800;
@@ -192,9 +169,7 @@ button {
   max-width: 700px;
 }
 
-/* --------------------------------------------
-   ФИЛЬТРЫ
--------------------------------------------- */
+
 .topic-filters {
   display: flex;
   flex-wrap: wrap;
@@ -220,9 +195,7 @@ button {
   background: #fafdfd;
 }
 
-/* --------------------------------------------
-   СЕТКА КАРТОЧЕК (изменена)
--------------------------------------------- */
+
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -268,9 +241,7 @@ button {
 .post-card__date { margin-top: auto; font-size: 12px; color: var(--gray-text);}
 .load-more { display: flex; justify-content: center; margin-top: 60px;}
 
-/* --------------------------------------------
-   ПОДВАЛ
--------------------------------------------- */
+
 .site-footer {
   background: var(--footer-bg);
   color: white;
@@ -319,9 +290,7 @@ button {
   opacity: 0.8;
 }
 
-/* --------------------------------------------
-   СТРАНИЦА СТАТЬИ
--------------------------------------------- */
+
 .article-layout-wrap { position: relative;}
 .decor-circle {
   position: absolute;
@@ -462,9 +431,7 @@ button {
 .problem-block__text { font-size: 17px; margin-bottom: 32px;}
 .problem-block__img { width: 480px;}
 
-/* --------------------------------------------
-   АДАПТИВНОСТЬ (изменены брейкпоинты)
--------------------------------------------- */
+
 @media (max-width: 1180px) {
   .wrap { width: calc(100% - 60px);}
   .two-columns { gap: 60px;}
